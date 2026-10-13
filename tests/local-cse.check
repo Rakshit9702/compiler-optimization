@@ -1,0 +1,5 @@
+CHECK: %first = add i32 %x, %y
+CHECK-NOT: %second = add i32 %x, %y
+CHECK: %result = mul i32 %first, 3
+CHECK: %slot_a = alloca i32
+CHECK: %slot_b = alloca i32

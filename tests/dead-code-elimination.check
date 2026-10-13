@@ -1,0 +1,5 @@
+CHECK-NOT: %dead = add i32
+CHECK: load volatile i32, ptr %address
+CHECK: call void @observe(i32 %value)
+CHECK: store i32 %value, ptr %address
+CHECK: ret i32 %value

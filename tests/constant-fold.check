@@ -1,0 +1,3 @@
+CHECK: ret i32 84
+CHECK-NOT: %sum = add i32 19, 23
+CHECK-NOT: %answer = mul i32
